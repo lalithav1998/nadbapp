@@ -98,3 +98,6 @@ font-size: 18px;
 padding-right: 5px;
 font-family: Arial, Helvetica, sans-serif;
 }
+a:hover{
+background-color: #efeeed;
+}
