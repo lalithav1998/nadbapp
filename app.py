@@ -94,7 +94,7 @@ def index():
             description = i["description"]
             url_txt = i["title"]
             src_time = i["src_time"]
-            result_str += f'''<div>
+            result_str += f'''<div class="news-item"><div>
                               <a href="{href}" target="_blank" class="headline">{url_txt}
                               </a>
                               </div>
@@ -110,7 +110,7 @@ def index():
                                </div>
                                <div>
                                <p></p>
-                               </div>
+                               </div></div>
                                '''
 
     result_str += '</form></div>'
