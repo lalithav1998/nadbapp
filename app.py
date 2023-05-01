@@ -86,32 +86,32 @@ def index():
                     </div><br>
                  '''
     
-    if len(final_df) <= 2:
-        result_str += f'''<div><p>This app is temporarily unavailable"</p>'''
-
-    for n, i in final_df.iterrows():  # iterating through the search results
-        href = i["url"]
-        description = i["description"]
-        url_txt = i["title"]
-        src_time = i["src_time"]
-        result_str += f'''<div>
-                          <a href="{href}" target="_blank" class="headline">{url_txt}
-                          </a>
-                          </div>
-                          <div>
-                          <a href="{href}" target="_blank" class="description">
-                          {description}
-                          </a>
-                          </div>
-                          <div>
-                          <a href="{href}" target="_blank" class="time">
-                          {src_time}
-                           </a>
-                           </div>
-                           <div>
-                           <p></p>
-                           </div>
-                           '''
+    if len(final_df) <= 1:
+        result_str += f'''<div>This app is temporarily unavailable'''
+    else:
+        for n, i in final_df.iterrows():  # iterating through the search results
+            href = i["url"]
+            description = i["description"]
+            url_txt = i["title"]
+            src_time = i["src_time"]
+            result_str += f'''<div>
+                              <a href="{href}" target="_blank" class="headline">{url_txt}
+                              </a>
+                              </div>
+                              <div>
+                              <a href="{href}" target="_blank" class="description">
+                              {description}
+                              </a>
+                              </div>
+                              <div>
+                              <a href="{href}" target="_blank" class="time">
+                              {src_time}
+                               </a>
+                               </div>
+                               <div>
+                               <p></p>
+                               </div>
+                               '''
 
     result_str += '</form></div>'
     return render_template("index.html", body=result_str)
