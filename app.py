@@ -94,7 +94,7 @@ def index():
             description = i["description"]
             url_txt = i["title"]
             src_time = i["src_time"]
-            result_str += f'''<div style="border-radius: 5px;">
+            result_str += f'''<div style="border-radius: 50px; box-shadow: 5px 10px #888888;">
                               <a href="{href}" target="_blank" class="headline">{url_txt}
                               </a>
                               </div>
