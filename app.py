@@ -87,7 +87,7 @@ def index():
                  '''
     
     if len(final_df) <= 1:
-        result_str += f'''<div>This app is temporarily unavailable'''
+        result_str += f'''<div>This app is temporarily unavailable</div>'''
     else:
         for n, i in final_df.iterrows():  # iterating through the search results
             href = i["url"]
