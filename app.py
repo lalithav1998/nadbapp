@@ -85,6 +85,9 @@ def index():
                     <h1>Latest News</h1>
                     </div><br>
                  '''
+    
+    if len(final_df) == 0:
+        result_str += f'''<div><p>This app is temporarily unavailable"</p>'''
 
     for n, i in final_df.iterrows():  # iterating through the search results
         href = i["url"]
