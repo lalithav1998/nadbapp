@@ -1,7 +1,7 @@
 a.headline {
 background-color: #E5E4E2;
 display: block;
-width: 98.7%;
+width: relative;
 text-decoration: none;
 color: black;
 line-height: 1.2;
@@ -19,9 +19,10 @@ font-family: Arial, Helvetica, sans-serif;
 a.description {
 background-color: #E5E4E2;
 align:justify;
+text-align: justify;
 display: block;
 height:100%;
-width: 98.7%;
+width: relative;
 text-decoration: none;
 border-left: 5px solid transparent;
 border-top: 0px;
@@ -38,7 +39,7 @@ background-color: #E5E4E2;
 align:justify;
 display: block;
 height:100%;
-width: 98.7%;
+width: relative;
 text-decoration: none;
 border-left: 5px solid transparent;
 border-top: 0px;
@@ -101,8 +102,7 @@ font-family: Arial, Helvetica, sans-serif;
 div.news-item{
 	background-color: #E5E4E2;
 /*box-shadow: rgba(0, 0, 0, 0.4) -1px 0px 5px, rgba(0, 0, 0, 0.5) 0px 4px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;*/
-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 1px, rgba(0, 0, 0, 0.1) 0px 4px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-      text-align: justify;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px 1px, rgba(0, 0, 0, 0.1) 0px 4px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	  }
 div.news-item:hover{
 box-shadow: none;
