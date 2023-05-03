@@ -80,7 +80,7 @@ def index():
                                  'description': '', 'src_time': ''}, index=[0])
 
     result_str = '''
-                    <div class="box"><form> 
+                    <div class="box" id="main"><form> 
                     <div class="banner">
                     <h1>Latest News</h1>
                     </div><br>
