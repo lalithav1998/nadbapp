@@ -5,6 +5,15 @@
      <meta http-equiv="refresh" content="10">
     <title>Latest News</title>
     <link rel="stylesheet" href="static/styles.css">
+    <script>
+        var counter = 1;
+        var auto_refresh = setInterval(
+            function () {
+                var newcontent= 'Refresh nr:'+counter;
+                $('#divID').html(newcontent);
+                counter++;
+            }, 100);
+    </script>
 </head>
 <body>
 {{body | safe}}
